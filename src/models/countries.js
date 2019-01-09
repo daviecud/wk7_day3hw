@@ -13,7 +13,7 @@ Countries.prototype.getData = function(){
   }
   const jsonString = xhr.responseText;
   const data = JSON.parse(jsonString);
-  this.countries = data[0].countries;
+  this.countries = data.countries;
   PubSub.publish('Countries:all-countries', this.countries);
   console.log('working', data);
   });

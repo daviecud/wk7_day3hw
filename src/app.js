@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
   selectView.bindEvents()
 
   const countries = new Countries();
-  countries.bindEvents();
+  // countries.bindEvents();
   countries.getData();
 });

@@ -8,6 +8,7 @@ SelectView.prototype.bindEvents = function(){
   PubSub.subscribe('SelectView:all-countries', (event) => {
     this.populate(event.detail);
   });
+  
 }
 
 module.exports = SelectView;
