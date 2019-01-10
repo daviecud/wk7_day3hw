@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
   selectView.bindEvents()
 
   const countries = new Countries();
-  // countries.bindEvents();
+  countries.bindEvents();
   countries.getData();
 
   const countryView = new CountryView();
   countryView.bindEvents();
-
+console.log('working', countryView);
 
 });

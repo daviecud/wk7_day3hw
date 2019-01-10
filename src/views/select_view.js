@@ -13,6 +13,7 @@ SelectView.prototype.bindEvents = function(){
   this.element.addEventListener('change', (event) => {
     const selectedIndex = event.target.value;
     PubSub.publish('SelectView:country-selected', selectedIndex);
+console.log('Good?', selectedIndex);
   });
 }
 

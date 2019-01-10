@@ -22,6 +22,8 @@ Countries.prototype.getData = function(){
  xhr.setRequestHeader('Accept', 'application/json')
  xhr.send();
 
+}
+
 Countries.prototype.bindEvents = function() {
   PubSub.publish('Countries:data-ready', this.countries);
 
@@ -34,8 +36,8 @@ Countries.prototype.bindEvents = function() {
 }
 
 Countries.prototype.findCountry = function (index) {
-  return this.data[index];
+  return this.countries[index];
 }
-}
+
 
 module.exports = Countries;
