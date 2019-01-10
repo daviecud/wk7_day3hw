@@ -1,12 +1,22 @@
-/* body {
-  margin: 0;
-  background-color: llightblue;
+body {
+  margin: 20px;
+  background-color: lightblue;
   color: #ffffff;
   font-family: 'Charm', cursive;
 
 }
 
-h1 {
-  color: #ffffff;
+#country {
+  color: red;
   font-weight: bolder;
-} */
+  text-align: center;
+}
+
+#country h3 {
+  text-decoration: underline;
+  color: red;
+}
+
+#countries {
+  font-family: 'Charm', cursive;
+}
